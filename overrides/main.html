@@ -1,5 +1,30 @@
 {% extends "base.html" %}
 
+{% block extrahead %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "蔚县历史知识库",
+    "url": "https://yuxian-history.pages.dev/",
+    "description": "光绪《蔚州志》系统数字化考据——蔚州建制、古迹、人物、风土专业整理",
+    "publisher": { "@type": "Organization", "name": "蔚县人的那些事" }
+  }
+  </script>
+  {% if not page.is_homepage and page.canonical_url %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ page.title }}",
+    "url": "{{ page.canonical_url }}",
+    "publisher": { "@type": "Organization", "name": "蔚县人的那些事" },
+    "isPartOf": { "@type": "WebSite", "name": "蔚县历史知识库", "url": "https://yuxian-history.pages.dev/" }
+  }
+  </script>
+  {% endif %}
+{% endblock %}
+
 {% block content %}
   {% if not page.is_homepage %}
   <div class="wx-lead">

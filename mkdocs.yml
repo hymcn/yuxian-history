@@ -1,6 +1,7 @@
 site_name: 蔚县历史知识库
 site_description: 光绪《蔚州志》系统数字化考据——蔚州建制、古迹、人物、风土专业整理
 site_author: 蔚县人的那些事
+site_url: https://yuxian-history.pages.dev/
 
 theme:
   name: material
