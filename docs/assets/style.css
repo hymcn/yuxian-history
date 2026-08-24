@@ -73,6 +73,9 @@ hr {
   border-radius: 6px;
   background: #fff;
   padding: 4px;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
 }
 .wx-text { text-align: left; }
 .wx-title {
