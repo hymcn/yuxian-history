@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block footer %}
+  {{ super() }}
+  <footer class="wx-footer">
+    <div class="wx-footer-inner">
+      <img class="wx-qr" src="{{ 'assets/gongzhonghao_qr.png' | url }}" alt="公众号「蔚县人的那些事」二维码" width="150" onerror="this.style.display='none'" />
+      <div class="wx-text">
+        <div class="wx-title">关注公众号「蔚县人的那些事」</div>
+        <div class="wx-sub">搜「蔚州旧事」看光绪《蔚州志》全集 · 校勘 · 译文 · 考据</div>
+        <div class="wx-seal">读懂蔚州的每一页历史</div>
+      </div>
+    </div>
+  </footer>
+{% endblock %}
