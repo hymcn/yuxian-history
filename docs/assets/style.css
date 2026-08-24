@@ -1,0 +1,53 @@
+/* 蔚县历史知识库 — 古典学术风（宣纸底·暗红·宋体） */
+:root {
+  --md-default-bg-color: #faf6ee;
+  --md-default-fg-color: #1a1a1a;
+  --md-primary-fg-color: #8b0000;
+  --md-accent-fg-color: #8b0000;
+  --paper: #faf6ee;
+  --ink: #1a1a1a;
+  --accent: #8b0000;
+  --gold: #b8860b;
+}
+
+.md-typeset {
+  font-family: "Noto Serif SC", "Songti SC", 宋体, serif;
+  line-height: 2;
+  font-size: 0.95rem;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  color: var(--accent);
+  font-weight: 700;
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 0.3rem;
+}
+
+.md-typeset blockquote {
+  border-left: 4px solid var(--accent);
+  background: #f3ecdc;
+  color: #4a3b2a;
+  padding: 0.6rem 1rem;
+}
+
+.md-typeset a {
+  color: var(--accent);
+}
+
+/* 印章落款 */
+.seal {
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 0.85rem;
+  display: inline-block;
+  transform: rotate(-3deg);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--gold);
+  margin: 1.5rem 0;
+}

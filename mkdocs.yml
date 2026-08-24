@@ -1,0 +1,50 @@
+site_name: 蔚县历史知识库
+site_description: 光绪《蔚州志》系统数字化考据——蔚州建制、古迹、人物、风土专业整理
+site_author: 蔚县人的那些事
+repo_url: https://github.com/your-name/yuxian-history
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: red
+      accent: red
+      toggle:
+        icon: material/weather-night
+        name: 暗色
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: 亮色
+  font:
+    text: Noto Serif SC
+    code: Noto Serif SC
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.action.edit
+    - content.code.copy
+
+extra_css:
+  - assets/style.css
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.details
+
+nav:
+  - 首页: index.md
+  - 考据:
+      - 代王城: 代王城.md
+      - 实体索引: 索引.md
+      - FAQ（GEO）: faq.md
+  - 关于工程: 关于.md
+  - 部署说明: 部署.md
