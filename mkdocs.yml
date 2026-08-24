@@ -30,6 +30,10 @@ theme:
 
 extra_css:
   - assets/style.css
+  - assets/app.css
+
+extra_javascript:
+  - assets/app.js
 
 markdown_extensions:
   - admonition
@@ -41,9 +45,16 @@ markdown_extensions:
 
 nav:
   - 首页: index.md
+  - 志书版本:
+      - 光绪《蔚州志》: 版本/光绪.md
+      - 乾隆《蔚州志》: 版本/乾隆.md
+      - 顺治《蔚州志》: 版本/顺治.md
+  - 影印图谱:
+      - 总览: 图谱/index.md
   - 考据:
       - 代王城: 代王城.md
       - 实体索引: 索引.md
+      - 考据 FAQ: faq.md
   - 卷首:
       - 第01章 方志之难: 章节/第01章.md
       - 第02章 纂修源流: 章节/第02章.md

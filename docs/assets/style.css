@@ -79,6 +79,25 @@ hr {
   display: block;
 }
 
+/* 顶部：志书版本切换条 */
+.md-announce {
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.85rem;
+}
+.md-announce a, .md-announce .vs-label, .md-announce .vs-sep {
+  color: #fff;
+}
+.md-announce a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.6);
+  padding: 0 0.1rem;
+}
+.md-announce a:hover { color: #ffe9b0; border-color: #ffe9b0; }
+.md-announce .vs-label { font-weight: 700; margin-right: 0.3rem; }
+.md-announce .vs-sep { opacity: 0.6; margin: 0 0.35rem; }
+.md-announce__actions { display: none; }
+
 /* 文章开头：公众号引流提示框 */
 .wx-lead {
   border-left: 4px solid var(--accent);

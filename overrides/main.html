@@ -1,5 +1,14 @@
 {% extends "base.html" %}
 
+{% block announce %}
+  <span class="vs-label">志书版本</span>
+  <a class="vs-link" href="{{ '版本/光绪.md' | url }}">光绪《蔚州志》</a>
+  <span class="vs-sep">·</span>
+  <a class="vs-link" href="{{ '版本/乾隆.md' | url }}">乾隆《蔚州志》</a>
+  <span class="vs-sep">·</span>
+  <a class="vs-link" href="{{ '版本/顺治.md' | url }}">顺治《蔚州志》</a>
+{% endblock %}
+
 {% block extrahead %}
   <script type="application/ld+json">
   {
