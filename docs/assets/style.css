@@ -78,6 +78,29 @@ hr {
   height: auto;
   display: block;
 }
+
+/* 文章开头：公众号引流提示框 */
+.wx-lead {
+  border-left: 4px solid var(--accent);
+  background: #f3ecdc;
+  color: #4a3b2a;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0 6px 6px 0;
+}
+.wx-lead-title {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.98rem;
+  margin-bottom: 0.3rem;
+}
+.wx-lead-text {
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+.wx-lead-text strong {
+  color: var(--accent);
+}
 .wx-text { text-align: left; }
 .wx-title {
   color: var(--accent);

@@ -1,5 +1,19 @@
 {% extends "base.html" %}
 
+{% block content %}
+  {% if not page.is_homepage %}
+  <div class="wx-lead">
+    <div class="wx-lead-title">📜 本文系《蔚州旧事》系列数字考据</div>
+    <div class="wx-lead-text">
+      完整校勘稿、高清影印图与逐页译文，持续发布于公众号
+      <strong>「蔚县人的那些事」</strong>。关注后回复「蔚州志」可获取
+      光绪《蔚州志》全集目录与更新提醒。
+    </div>
+  </div>
+  {% endif %}
+  {{ super() }}
+{% endblock %}
+
 {% block footer %}
   {{ super() }}
   <footer class="wx-footer">
@@ -7,7 +21,7 @@
       <img class="wx-qr" src="{{ 'assets/gongzhonghao_qr.png' | url }}" alt="公众号「蔚县人的那些事」二维码" onerror="this.style.display='none'" />
       <div class="wx-text">
         <div class="wx-title">关注公众号「蔚县人的那些事」</div>
-        <div class="wx-sub">搜「蔚州旧事」看光绪《蔚州志》全集 · 校勘 · 译文 · 考据</div>
+        <div class="wx-sub">光绪《蔚州志》全集 · 校勘 · 译文 · 考据，持续更新</div>
         <div class="wx-seal">读懂蔚州的每一页历史</div>
       </div>
     </div>
